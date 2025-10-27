@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jessica Randall</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-green': 'hsl(75, 94%, 57%)',
+                        'dark-grey': 'hsl(0, 0%, 20%)',
+                        'off-black': 'hsl(0, 0%, 12%)',
+                        'grey': 'hsl(0, 0%, 25%)',
+                        // Colors from the snippet:
+                        'base-dark': '#3d3c3d', // Outer background
+                        'inner-dark': '#323132', // Inner background
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+
+<body class="bg-off-black min-h-screen flex justify-center items-center font-sans">
+
+   <div 
+     class="relative drop-shadow-2xl w-96 h-auto overflow-hidden rounded-xl bg-base-dark p-1"
+   >
+        <div 
+          class="relative p-8 flex flex-col items-center text-center text-white z-10 opacity-100 rounded-xl bg-inner-dark space-y-5"
+        >
+            
+            <img 
+                src="C:\Users\Lenovo\Desktop\social-links-profile-main\assets\images\avatar-jessica.jpeg" 
+                alt="Jessica Randall" 
+                class="rounded-full w-20 h-20"
+            >
+
+            <div class="space-y-1">
+                <h1 class="text-white text-2xl font-semibold mt-4">Jessica Randall</h1>
+                <p class="text-custom-green text-sm font-bold">London, United Kingdom</p>
+                <p class="text-white text-sm mt-4">"Front-end developer and avid reader."</p>
+            </div>
+
+            <div class="w-full space-y-4 pt-3">
+                <a href="#" class="block w-full text-center py-3 rounded-lg bg-dark-grey hover:bg-custom-green hover:text-off-black text-white font-semibold transition duration-300">GitHub</a>
+                <a href="#" class="block w-full text-center py-3 rounded-lg bg-dark-grey hover:bg-custom-green hover:text-off-black text-white font-semibold transition duration-300">Frontend Mentor</a>
+                <a href="#" class="block w-full text-center py-3 rounded-lg bg-dark-grey hover:bg-custom-green hover:text-off-black text-white font-semibold transition duration-300">LinkedIn</a>
+                <a href="#" class="block w-full text-center py-3 rounded-lg bg-dark-grey hover:bg-custom-green hover:text-off-black text-white font-semibold transition duration-300">Twitter</a>
+                <a href="#" class="block w-full text-center py-3 rounded-lg bg-dark-grey hover:bg-custom-green hover:text-off-black text-white font-semibold transition duration-300">Instagram</a>
+            </div>
+            
+        </div>
+
+        <div 
+          class="absolute w-56 h-48 bg-white blur-[50px] -left-1/2 -top-1/2"
+        ></div>
+    </div>
+
+</body>
+</html>
